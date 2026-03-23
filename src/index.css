@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bitcount";
+  src: url("./assets/fonts/Bitcount.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Comic";
+  src: url("./assets/fonts/Comic.woff2") format("woff2");
+}

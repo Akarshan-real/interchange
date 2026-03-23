@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Interchange",
+    "short_name": "Interchange",
+    "version": "1.0.0",
+    "description": "Sync play/pause between two media tabs like YouTube , Youtube Music and Spotify",
+    "author" : "Akarshan Chakraborty",
+    "icons": {
+        "16": "icon/interchange.png",
+        "48": "icon/interchange.png",
+        "128": "icon/interchange.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon/interchange.png",
+            "48": "icon/interchange.png",
+            "128": "icon/interchange.png"
+        }
+    },
+    "permissions": ["tabs", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.spotify.com/*"
+            ],
+            "js": ["contentScript.js"]
+        }
+    ]
+}
