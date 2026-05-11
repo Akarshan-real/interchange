@@ -124,7 +124,7 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center items-center p-1 bg-gradient-to-r from-cyan-400 to-indigo-700 rounded-lg shadow-[0px_-1px_15px_3px_rgba(0,0,0,0.4)] w-fit">
+    <div className="flex justify-center items-center p-1 bg-gradient-to-r from-cyan-400 to-indigo-700 shadow-[0px_-1px_15px_3px_rgba(0,0,0,0.4)] w-fit">
       <div className="bg-[#061a40] rounded-lg w-fit px-2 py-2">
         {/* Title */}
         <h2
